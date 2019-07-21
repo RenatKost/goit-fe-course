@@ -1,7 +1,5 @@
 .menu {
     list-style-type: none;
-    padding-left: 0;
-    margin-left: 0;
 }
 .menu a {
     text-decoration: none;
@@ -13,19 +11,49 @@
     
 }
 .menu li {
-    padding-left: 15%;
-    display: inline;    
-}
-.box1 {
     display: inline-block;
-    position: relative;
-    top: 20%;
+    width: 180px;
+    height: 0px;
+    margin-top: 50px;
+    margin-bottom: 60px;
 }
-.img1 {
-    top: 20%;
-    left: 0%;
-    margin-top: 30px;
-    margin-left: 130px
-    
+.nav1 {
+    padding-left: 290px;
+   }
+.box {
+    display: inline-block;
+    width: 421px;
+    height: 250px;
+    margin: 30px 30px 350px;
+}
+.box h2 {
+        font-size: 30px;
+        font-family: "PlayfairDisplay";
+        color: rgb(98, 98, 98);
+        line-height: 1.2;
+      }
+.box p {
+        font-size: 14px;
+        font-family: "PlayfairDisplay";
+        color: rgb(98, 98, 98);
+        line-height: 1.714;
+      }
+.coci {
+        font-size: 14px;
+        font-family: "Ubuntu";
+        color: rgb(180, 173, 158);
+        text-transform: uppercase;
+        line-height: 1.2;
+      }
+.butt {
+        font-size: 30px;
+        font-family: "PlayfairDisplay";
+        color: rgb(98, 98, 98);
+        line-height: 1.2;
+        margin: -50px 400px 120px;
+        
+      }
+.content {
+    padding-left: 180px;
 }
     
