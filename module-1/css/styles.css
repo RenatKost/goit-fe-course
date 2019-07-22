@@ -1,7 +1,17 @@
-.menu {
-    list-style-type: none;
+html {
+    box-sizing: border-box;
 }
-.menu a {
+*, 
+*::before, 
+*::after{
+    box-sizing: inherit;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.list {
     text-decoration: none;
     color: rgb(98,98,98);
     font-size: 14px;
@@ -12,19 +22,26 @@
 }
 .menu li {
     display: inline-block;
-    width: 180px;
-    height: 0px;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    margin-top: 50px; 
+    margin-bottom: 80px;
 }
-.nav1 {
-    padding-left: 290px;
+.menu li:not(:last-child) {
+    margin-right: 80px;
+}
+.conteiner {
+    width: 900px;
+    margin: 0px auto;
    }
 .box {
     display: inline-block;
     width: 421px;
     height: 250px;
-    margin: 30px 30px 350px;
+}
+.box:not(:last-child) {
+    margin-bottom: 400px;
+}
+.box:not(:nth-child(2n)) {
+    margin-right: 50px;
 }
 .box h2 {
         font-size: 30px;
@@ -50,10 +67,8 @@
         font-family: "PlayfairDisplay";
         color: rgb(98, 98, 98);
         line-height: 1.2;
-        margin: -50px 400px 120px;
+        margin: 0px 370px 120px;
         
       }
-.content {
-    padding-left: 180px;
-}
+
     
