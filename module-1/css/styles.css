@@ -12,13 +12,16 @@ img {
     height: auto;
 }
 .list {
+    text-align: center;
+    
+}
+
+.list li a {
     text-decoration: none;
     color: rgb(98,98,98);
     font-size: 14px;
     font-family: "PlayfairDisplay";   
     text-transform: uppercase;
-    text-align: center;
-    
 }
 .menu li {
     display: inline-block;
