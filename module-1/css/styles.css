@@ -11,9 +11,15 @@ img {
     max-width: 100%;
     height: auto;
 }
+body {
+    margin: 0px;
+}
+
 .list {
     text-align: center;
-    
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
 }
 
 .list li a {
@@ -22,6 +28,7 @@ img {
     font-size: 14px;
     font-family: "PlayfairDisplay";   
     text-transform: uppercase;
+    margin: 0px;
 }
 .menu li {
     display: inline-block;
@@ -35,43 +42,53 @@ img {
     width: 900px;
     margin: 0px auto;
    }
+.content {
+    font-size: 0px;
+    padding-bottom: 150px;
+}
 .box {
     display: inline-block;
     width: 421px;
-    height: 250px;
 }
 .box:not(:last-child) {
-    margin-bottom: 400px;
+    margin-bottom: 100px;
 }
 .box:not(:nth-child(2n)) {
     margin-right: 50px;
 }
+
 .box h2 {
         font-size: 30px;
         font-family: "PlayfairDisplay";
         color: rgb(98, 98, 98);
         line-height: 1.2;
+        margin: 0px 0px 25px 0px;
+      }
+.box .coci {
+        font-size: 14px;
+        font-family: "Ubuntu";
+        color: rgb(180, 173, 158);
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-bottom: 25px;
       }
 .box p {
         font-size: 14px;
         font-family: "PlayfairDisplay";
         color: rgb(98, 98, 98);
         line-height: 1.714;
+        margin: 0px 0px;
       }
-.coci {
-        font-size: 14px;
-        font-family: "Ubuntu";
-        color: rgb(180, 173, 158);
-        text-transform: uppercase;
-        line-height: 1.2;
-      }
+
 .butt {
         font-size: 30px;
         font-family: "PlayfairDisplay";
         color: rgb(98, 98, 98);
         line-height: 1.2;
-        margin: 0px 370px 120px;
-        
+        margin: 0px 370px;        
       }
+.butt:hover {
+    background-color: aqua;
+}
 
     
