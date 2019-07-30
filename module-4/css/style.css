@@ -29,8 +29,8 @@ body {
 }
 
 .header {
-    margin-bottom: 100px;
-    margin-top: 50px;
+    padding-bottom: 100px;
+    padding-top: 50px;
 }
 
 .logo::first-letter {
@@ -51,8 +51,10 @@ body {
 }
 
 
-.menu ul {
+.menu {
     float: right;
+}
+.menu ul {
     width: 520px;
     margin: 0px;
     padding: 0px;
@@ -69,7 +71,7 @@ body {
     text-transform: uppercase;
 }
 .menu li {
-    display: inline-block;
+    float: left;
 }
 .menu li:not(:last-child){
     margin-right: 34px;
@@ -234,9 +236,8 @@ body {
 .blog article {
     display: block;
     width: 350px;
-    height: 542px;
     float: left;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .blog article:not(:last-child) {
@@ -249,6 +250,8 @@ body {
 }
 
 .blog h4 {
+    margin: 0px;
+    margin-bottom: 30px;
     font-size: 18px;
     font-family: "OpenSans", sans-serif;
     color: rgb(85, 82, 82);
