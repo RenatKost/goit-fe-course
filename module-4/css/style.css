@@ -7,6 +7,11 @@ html {
 *::after {
     box-sizing: inherit;
 }
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
 img {
     display: block;
@@ -24,62 +29,53 @@ body {
 }
 
 .header {
-    display: inline-block;
-    height: 100px;
-    width: 1110px;
-    margin-top: 50px;
     margin-bottom: 100px;
-
+    margin-top: 50px;
 }
 
-p.logo::first-letter {
+.logo::first-letter {
     color: rgb(26, 188, 156);
     font-weight: bold;
 }
 
-p.logo {
+.logo {
     font-size: 30px;
     font-family: "Roboto", sans-serif;
     color: rgb(85, 82, 82);
     text-transform: uppercase;
+    text-decoration: none;
     line-height: 1.067;
     margin: 0px;
-    margin-right: 480px;
     float: left;
 
 }
+
 
 .menu ul {
-    margin-top: 5px;
-    padding: 0px;
-}
-
-.menu ul li {
-    float: left;
-    padding: 0px;
+    float: right;
+    width: 520px;
     margin: 0px;
-    text-decoration: none;
-    list-style-type: none;
-
-}
-
-.menu li a {
-    display: inline-block;
-    text-decoration: none;
+    padding: 0px;
     font-size: 14px;
+    list-style: none;
+}
+.menu li a {
+    display: block;
+    text-decoration: none;
     font-family: "OpenSans", sans-serif;
     color: rgb(85, 82, 82);
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 26px;
     text-transform: uppercase;
-    line-height: 0.786;
 }
-
+.menu li {
+    display: inline-block;
+}
+.menu li:not(:last-child){
+    margin-right: 34px;
+}
 .menu li a:hover {
     color: rgb(26, 188, 156);
-}
-
-.menu li a:not(last-child) {
-    margin-right: 35px;
 }
 
 .product h2 {
@@ -111,7 +107,6 @@ p.logo {
 }
 
 .product ul li {
-    position: relative;
     display: block;
     height: 322px;
     width: 255px;
@@ -125,44 +120,44 @@ p.logo {
 }
 
 .q {
-    margin-top: 55px;
+    margin-top: 72px;
 }
 
 .w {
-    margin-top: 17px;
-    margin-left: 25px;
+    margin-top: 33px;
+    margin-left: 37px;
 }
 
 .e {
     margin-top: 70px;
-    margin-bottom: 35px;
+    margin-bottom: 53px;
     margin-left: 15px;
 }
 
 .r {
     margin-top: 40px;
-    margin-bottom: 18px;
+    margin-bottom: 35px;
 }
 
 .t {
     margin-top: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 27px;
     margin-left: 15px;
 }
 
 .y {
     margin-top: 50px;
-    margin-bottom: 35px;
+    margin-bottom: 52px;
 }
 
 .u {
-    margin-top: 22px;
+    margin-top: 39px;
     margin-left: 30px;
 }
 
 .i {
     margin-top: 84px;
-    margin-bottom: 80px;
+    margin-bottom: 97px;
     margin-left: 15px;
 }
 
@@ -200,6 +195,8 @@ p.logo {
     display: inline-block;
     width: 51px;
     height: 40px;
+    margin: 0px;
+    padding: 0px;
     background-color: rgb(140, 140, 140);
     font-size: 18px;
     font-family: "Roboto", sans-serif;
@@ -269,16 +266,20 @@ p.logo {
 }
 
 .blog p {
+    margin: 0px;
+    padding: 0px;
     font-size: 14px;
     font-family: "OpenSans", sans-serif;
     color: rgb(85, 82, 82);
     line-height: 1.857;
 }
 
-.blog button {
+.blog a {
     display: inline-block;
     width: 160px;
     height: 50px;
+    margin-top: 15px;
+    padding-top: 13px;
     background-color: rgb(26, 188, 156);
     font-size: 16px;
     font-family: "OpenSans", sans-serif;
@@ -286,4 +287,5 @@ p.logo {
     line-height: 1.625;
     text-align: center;
     border-radius: 10px;
+    text-decoration: none;
 }
