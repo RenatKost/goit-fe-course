@@ -1,0 +1,296 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+body {
+    margin: 0px;
+}
+.header {
+    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+.logo::first-letter {
+    color: rgb(26, 188, 156);
+    font-weight: bold;
+}
+.logo {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(85, 82, 82);
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.067;
+    margin: 0px;
+    float: left;
+}
+.menu {
+    float: right;
+}
+.menu ul {
+    width: 520px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    list-style: none;
+}
+.menu li {
+    float: left;
+}
+.menu li a {
+    display: block;
+    text-decoration: none;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(85, 82, 82);
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+.menu li:not(:last-child){
+    margin-right: 34px;
+}
+.menu li a:hover {
+    color: rgb(26, 188, 156);
+}
+
+       /* MAIN SLIDE */
+.wraper {
+    width: 1500px;
+    margin: 0px auto;
+}
+.slide {
+    position: relative;
+    background-color: black;
+}
+.button-left {
+    position: absolute;
+    display: inline-block;
+    top: 38%;
+    left: 100px;
+    border: none;
+    width: 105px;
+    height: 105px;
+    background-color: rgb(80, 157, 139);
+}
+.button-rite {
+    position: absolute;
+    display: inline-block;
+    top: 38%;
+    right: 100px;
+    border: none;
+    width: 105px;
+    height: 105px;
+    background-color: rgb(80, 157, 139);
+}
+.slide h1 {
+    position: absolute;
+    display: inline-block;
+    top: 25%;
+    left: 260px;
+    font-size: 60px;
+    font-family: "Roboto",sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.slide p {
+    position: absolute;
+    display: inline-block;
+    top: 45%;
+    left: 260px;
+    font-size: 30px;
+    font-family: "Roboto",sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.slide img {
+    opacity: 0.4;
+}
+.product h2 {
+    font-size: 48px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(81, 81, 81);
+    text-transform: uppercase;
+    line-height: 0.667;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 100px;
+    margin-bottom: 75px;
+    padding: 0px;
+}
+
+.product h2::after {
+    display: block;
+    height: 7px;
+    width: 160px;
+    background-color: rgb(26, 188, 156);
+    content: '';
+    margin: 35px auto;
+}
+.product ul {
+    margin: 0px;
+    padding-left: 240px;
+}
+.product ul li {
+    position: relative;
+    display: block;
+    height: 322px;
+    width: 255px;
+    background-color: rgb(233, 240, 253);
+    float: left;
+    margin-bottom: 30px;
+}
+.submenu {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 297px;
+    width: 235px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+}
+.product a {
+    text-decoration: none;
+}
+.submenu:hover {
+    opacity: 0.5;
+}
+.submenu .like:hover {
+    background-color:rgb(26, 188, 156);
+    opacity: 1;
+}
+.submenu .next:hover {
+    background-color: rgb(26, 188, 156);
+    opacity: 1;
+}
+.submenu .time:hover {
+    background-color: rgb(26, 188, 156);
+    opacity: 1;
+}
+.submenu .cart:hover {
+    background-color: rgba(0, 255, 76, 0.897);
+    opacity: 1;
+}
+.product li:hover .name {
+    background-color: rgb(26, 188, 156);
+}
+
+.product li:hover .price {
+    background-color: rgb(127, 217, 199);
+}
+.product li:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+.product .like {
+    position: absolute;
+    top: 25%;
+    left: 14%;
+    width: 50px;
+    height: 50px;
+    border-width: 2px;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+}
+.product .next {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    width: 50px;
+    height: 50px;
+    border-width: 2px;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+}
+.product .time {
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    width: 50px;
+    height: 50px;
+    border-width: 2px;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+}
+.product .cart {
+    position: absolute;
+    top: 45%;
+    left: 14%;
+    width: 170px;
+    height: 50px;
+    border-width: 2px;
+    font-size: 14px;
+    font-family: "OpenSans" sans-serif;
+    text-transform: uppercase;
+    line-height: 2.286;
+    text-align: center;      
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    opacity: 1;
+}
+.product .name  {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(50, 50, 50);
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.778;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 13px;
+
+}
+
+.product .price  {
+    display: inline-block;
+    width: 51px;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(140, 140, 140);
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.778;
+    text-align: center;
+    text-decoration: none;
+}
+main {
+    margin-bottom: 100px;
+}
+.foot {
+    width: 1500px;
+    height: 88px;
+    margin: 0 auto;
+    background-color: rgb(50, 50, 50);
+}
+.foot p {
+    margin: 0px;
+    padding: 30px;
+        font-size: 16px;
+        font-family: "OpenSans", sans-serif;
+        color: rgb(254, 254, 254);
+        line-height: 1.75;
+        text-align: center;
+      }
+      
