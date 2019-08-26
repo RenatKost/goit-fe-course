@@ -62,26 +62,15 @@ img {
     transform: scaleX(0);
     transition: transform 200ms ease-in-out;
     }
+
     .site-navigation a:hover, .site-navigation a:focus {
     color: #f38181;
     }
+    
     .site-navigation a:hover::after, .site-navigation a:focus::after {
     transform: scaleX(1);
     }
-/*
-.site-navigation a:hover {
-    color: crimson;
-}
 
-.site-navigation a:hover::after{
-    display: block;
-    height: 1px;
-    width: 50px;
-    background-color: rgb(255, 0, 0);
-    content: '';
-    margin-top: 10px;
-}
-*/
 .first-h{
     display: block;
     font-style: oblique;
@@ -121,9 +110,7 @@ img {
     list-style: none;
 }
 
-.list-item::before{
-    content: icon ;
-}
+
 .list-item li {
     width: 340px;
     margin-bottom: 100px;
@@ -227,24 +214,17 @@ img {
     justify-content: space-between;
 }
 
-.team ul{
+.team .team-card{
     display: flex;
     justify-content: space-between;
     flex: 0, 0, 350px;
     list-style: none;
     padding: 0;
 }
-.team li {
+.team .team-cards {
     position: relative;
+    margin: 0;
    
-}
-
-.back-color {
-    position: absolute;
-    height: 470px;
-    width: 100%;
-    background-color: aqua;
-    opacity: 0;
 }
 
 .team-text {
@@ -266,13 +246,15 @@ img {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 0%;
+    top: 0;
     width: 100%;
     height: 470px;
     background: linear-gradient(#ee888ae5,#eed687e5);
     opacity: 0;
+    transition: transform 0.2s linear, opacity 0.2s linear;
     
 }
+
 
 .team a {
     width: 55px;
@@ -306,6 +288,7 @@ img {
 
 .team img {
     margin-left: 10px;
+    transition: transform 0.2s linear;
     
 }
 .team-name {
@@ -330,28 +313,18 @@ img {
 
 .team li:hover .overblock {
     box-shadow: 10px 10px 0 rgba(149, 225, 211, 1);
-    transform: translate(-5%,-5%);
+    transform: translate(-10%,-10%);
     opacity: 1;
 }
 
 .team li:hover .team-photo {
-    transform: translate(-5%,-5%);
+    transform: translate(-10%,-10%);
 }
 
-@keyframes team-card {
-    0% {
-        transform: translate(0%,0%);
-    }
-    100% {
-        transform: translate(-5%,-5%);
-    }
-}
-.team li:hover .back-color {
-    opacity: 1;
-}
 
 .overblock a:hover  {
     background-color: aqua;
+    transition: background-color 0.5s linear;
 }
 
 .foot {
@@ -372,6 +345,7 @@ img {
         font-family: "Montserrat",sans-serif;
         color: rgb(51, 51, 51);
         line-height: 1.2;
+        margin: 0;
 }
 
 .foot input {
