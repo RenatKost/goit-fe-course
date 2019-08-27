@@ -75,7 +75,7 @@ img {
     display: block;
     font-style: oblique;
         font-size: 24px;
-        font-family: "Kaushan+Script", sans-serif;
+        font-family: 'Kaushan Script', cursive;
         color: rgb(51, 51, 51);
         line-height: 1.2;
         text-align: center;
@@ -106,7 +106,7 @@ img {
 .service ul{
     padding: 0;
     padding-top: 65px;
-    margin-bottom: 85px;
+    margin: 0;
     list-style: none;
 }
 
@@ -217,9 +217,10 @@ img {
 .team .team-card{
     display: flex;
     justify-content: space-between;
-    flex: 0, 0, 350px;
+    flex: 0 0 350px;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 .team .team-cards {
     position: relative;
@@ -257,6 +258,7 @@ img {
 
 
 .team a {
+    display: block;
     width: 55px;
     height: 55px;
     margin-right: 2px;
@@ -313,12 +315,12 @@ img {
 
 .team li:hover .overblock {
     box-shadow: 10px 10px 0 rgba(149, 225, 211, 1);
-    transform: translate(-10%,-10%);
+    transform: translate(-10px ,-10px);
     opacity: 1;
 }
 
 .team li:hover .team-photo {
-    transform: translate(-10%,-10%);
+    transform: translate(-10px, -10px);
 }
 
 
